@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Loan Application</title>
+</head>
+<body>
+    <div style="width:850px; margin:20px auto; background:white; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0, 0, 0, 0.1);">
+        <div style=" color:black; padding:15px; border-radius:10px 10px 0 0;">
+            <h1 style="margin:0; font-size:24px;">Business Loan Application</h1>
+            <p style="margin:0; font-size:14px;">Personal Information</p><br>
+        </div>
+
+        <form>
+            <!-- Name of Applicant -->
+            <div style="margin-bottom:15px;">
+                <label>Name of Applicant <span style="color:red; font-weight:bold;">*</span></label>
+                <div style="display:flex; gap:15px;">
+                    <input type="text" placeholder="Prefix" style="flex:1; padding:10px; font-size:14px; border:1px solid #ccc; border-radius:5px;" />
+                    <input type="text" placeholder="First Name" style="flex:1; padding:10px; font-size:14px; border:1px solid #ccc; border-radius:5px;" />
+                    <input type="text" placeholder="Middle Name" style="flex:1; padding:10px; font-size:14px; border:1px solid #ccc; border-radius:5px;" />
+                    <input type="text" placeholder="Last Name" style="flex:1; padding:10px; font-size:14px; border:1px solid #ccc; border-radius:5px;" />
+                </div>
+            </div>
+
+            <!-- Email and Phone Number -->
+            <div style="display:flex; gap:40px; margin-bottom:25px;">
+                <div style="flex:1;">
+                    <label>E-mail of Applicant <span style="color:red; font-weight:bold;">*</span></label>
+                    <input type="email" placeholder="example@example.com" style="width:100%; padding:10px; font-size:14px; border:1px solid #ccc; border-radius:5px;" />
+                </div>
+                <div style="flex:1;">
+                    <label>Phone number of Applicant</label>
+                    <input type="tel" placeholder="(000) 000-0000" style="width:100%; padding:10px; font-size:14px; border:1px solid #ccc; border-radius:5px;" />
+                </div>
+            </div>
+
+            <!-- Mobile and Fax Number -->
+            <div style="display:flex; gap:40px; margin-bottom:25px;">
+                <div style="flex:1;">
+                    <label>Mobile Phone number of Applicant</label>
+                    <input type="tel" placeholder="(000) 000-0000" style="width:100%; padding:10px; font-size:14px; border:1px solid #ccc; border-radius:5px;" />
+                </div>
+                <div style="flex:1;">
+                    <label>Fax Number of Applicant</label>
+                    <input type="text" placeholder="(000) 000-0000" style="width:100%; padding:10px; font-size:14px; border:1px solid #ccc; border-radius:5px;" />
+                </div>
+            </div>
+
+            <!-- Address of Applicant -->
+            <div style="margin-bottom:15px;">
+                <label>Address of Applicant <span style="color:red; font-weight:bold;">*</span></label>
+                <input type="text" placeholder="Street Address" style="width:100%; padding:10px; font-size:14px; border:1px solid #ccc; border-radius:5px; margin-bottom:10px;" />
+                <input type="text" placeholder="Street Address Line 2" style="width:100%; padding:10px; font-size:14px; border:1px solid #ccc; border-radius:5px; margin-bottom:10px;" />
+                <div style="display:flex; gap:15px;">
+                    <input type="text" placeholder="City" style="flex:1; padding:10px; font-size:14px; border:1px solid #ccc; border-radius:5px;" />
+                    <input type="text" placeholder="State / Province" style="flex:1; padding:10px; font-size:14px; border:1px solid #ccc; border-radius:5px;" />
+                    <input type="text" placeholder="Postal / Zip Code" style="flex:1; padding:10px; font-size:14px; border:1px solid #ccc; border-radius:5px;" />
+                </div>
+            </div>
+
+            <!-- Date of Birth -->
+            <div style="margin-bottom:15px;">
+                <label>Date of Birth of Applicant <span style="color:red; font-weight:bold;">*</span></label>
+                <div style="display:flex; gap:15px;">
+                    <select style="flex:1; padding:10px; font-size:14px; border:1px solid #ccc; border-radius:5px;">
+                        <option value="">Please select a month</option>
+                    </select>
+                    <select style="flex:1; padding:10px; font-size:14px; border:1px solid #ccc; border-radius:5px;">
+                        <option value="">Please select a day</option>
+                    </select>
+                    <select style="flex:1; padding:10px; font-size:14px; border:1px solid #ccc; border-radius:5px;">
+                        <option value="">Please select a year</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Applying as -->
+            <div style="margin-bottom:15px;">
+                <label>Applying as <span style="color:red; font-weight:bold;">*</span></label>
+                <div style="display:flex; gap:15px; margin-top:5px;">
+                    <label><input type="radio" name="applying_as" /> Sole Proprietor</label>
+                    <label><input type="radio" name="applying_as" /> Partnership</label>
+                    <label><input type="radio" name="applying_as" /> Corporation</label>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div style="text-align:right;">
+                <button type="submit" style="background-color:blue; color:white; padding:10px 20px; font-size:14px; border:none; border-radius:5px; cursor:pointer;">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
