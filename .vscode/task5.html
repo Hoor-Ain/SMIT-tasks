@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Demo</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: rgba(25, 43, 107, 0.911);
+        color: whitesmoke;
+      }
+
+      .navbar {
+        background-color: #1a1a1a;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        font-family: sans-serif;
+      }
+
+      .navbar-left {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .navbar-left img {
+        height: 40px;
+      }
+
+      .navbar-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 14px;
+        color: #ffffffbd;
+      }
+
+      .navbar-right .toggle {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .navbar-right .toggle input {
+        width: 40px;
+        height: 20px;
+        background: #444;
+        border-radius: 10px;
+        position: relative;
+        appearance: none;
+        outline: none;
+        cursor: pointer;
+      }
+
+      .navbar-right .toggle input:checked {
+        background: #4caf50;
+      }
+
+      .navbar-right .toggle input::before {
+        content: "";
+        width: 18px;
+        height: 18px;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 1px;
+        left: 2px;
+        transition: 0.3s;
+      }
+
+      .navbar-right .toggle input:checked::before {
+        transform: translateX(20px);
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .navbar ul li {
+        cursor: pointer;
+        font-size: 14px;
+        color: #ffffffbd;
+      }
+
+      .main-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 20px;
+        font-family: Arial, sans-serif;
+      }
+
+      .content {
+        max-width: 500px;
+      }
+
+      .content h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+      }
+
+      .content p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .content ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .content ul li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .content ul li::before {
+        color: #4caf50;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-right: 10px;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: #e91e63;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+
+      .image-section {
+        position: relative;
+      }
+
+      .image-section img {
+        width: 500px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .image-section .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        padding: 15px;
+        cursor: pointer;
+      }
+
+      .image-section .play-button::before {
+        content: "\25B6";
+        font-size: 1.5em;
+        color: #000;
+      }
+      .wrapper{
+        /* border: 2px solid red; */
+        padding-left: 30px;
+      }
+      .name {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+        padding: 0px 20px;
+        max-width: fit-content;
+        margin-top: 50px;
+      }
+      .name-h1 {
+        /* border: 2px solid white; */
+        font-size: 40px;
+      }
+      .name-p {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 14px;
+      }
+      .mid-nav {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="mid-nav">
+        <div class="navbar-left">
+          <div>Moodle Demo</div>
+        </div>
+        <ul>
+          <li>Home</li>
+          <li>Dashboard</li>
+          <li>My Courses</li>
+          <li>Site Administration</li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="toggle">
+          <label for="mode">Edit mode</label>
+          <input type="checkbox" id="mode" />
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="name">
+        <img
+          src="./logo.png"
+          height="60px"
+          width="60px"
+          style="border-radius: 53px"
+          alt="logo"
+        />
+        <div>
+          <h1 class="name-h1">Edutor</h1>
+          <p class="name-p">Learning Portal</p>
+        </div>
+      </div>
+      <div class="main-section">
+        <div class="content">
+          <h1>Corporate Training Made Easy</h1>
+          <p>
+            Engaging and empowering learning through technology. Edutor is the
+            perfect theme for your Moodle LMS platform.
+          </p>
+          <ul>
+            <li>List item example lorem ipsum</li>
+            <li>List item example lorem ipsum</li>
+            <li>List item example lorem ipsum</li>
+          </ul>
+          <a href="#" class="btn">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
