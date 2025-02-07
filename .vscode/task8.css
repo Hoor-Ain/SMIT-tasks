@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main_div{
+    max-width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+gap: 17px;
+font-family: sans-serif;
+background-color: rgba(9, 85, 172, 0.788);
+padding: 7px 40px;
+padding-bottom: 45px;
+place-content: center;
+place-self: center;
+margin-top: 30px;
+}
+.p1{
+    opacity: 50%;
+    color: whitesmoke;
+    font-size: 15px;
+}
+h1{
+    font-size: 50px;
+    color: whitesmoke;
+}
+.p2{
+    color: rgba(245, 245, 245, 0.733);
+    font-size: 15px;
+}
+.span{
+color: whitesmoke;
+font-weight: 600;
+}
+.button{
+border: 1px solid rgba(0, 0, 0, 0.24);
+    max-width: fit-content;
+    padding: 10px 8px;
+    font-size: 16px;
+background-color: rgba(9, 85, 172, 0.788);
+color: whitesmoke;
+box-shadow: 5px 5px 0px 0px whitesmoke;
+}
